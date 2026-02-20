@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Message Details</title>
+</head>
+
+<body>
+    <h1>Message Details</h1>
+    <h3>Author: <%= message.user %>
+    </h3>
+    <p>
+        <%= message.text %>
+    </p>
+    <p>
+        Added: <%=message.added.toLocaleString() %>
+    </p>
+    <br><br>
+    <a href="/">Back to all messages</a>
+</body>
+
+</html>
