@@ -22,7 +22,9 @@ const messages = [
     const i = parseInt(req.params.index);
     const message = messages[i];
   
-    if (!message) return res.status(404).send('Message not found');
+    if (!message) {
+      return res.status(404).render('errors/404');
+    }
   
     res.render('messageDetails', { message });
   });

@@ -2,24 +2,26 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="/styles.css">
     <title>New Message</title>
 </head>
 
 <body>
-    <h1>Create a New Message</h1>
+    <div class="background"></div>
 
-    <form action="/new" method="POST">
+    <div class="overlay">
+        <h1>Create a New Message</h1>
 
-        <label for="user">Your Name:</label>
-        <input type="text" id="user" name="user" required>
-        <br><br>
+        <form action="/new" method="POST" class="form-card">
+            <label>Your Name:</label>
+            <input type="text" name="user" required>
 
-        <label for="text">Message:</label>
-        <textarea id="text" name="text" required></textarea>
-        <br><br>
+            <label>Message:</label>
+            <textarea name="text" required></textarea>
 
-        <button type="submit">Send Message</button>
-    </form>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
 </body>
 
 </html>

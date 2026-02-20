@@ -2,21 +2,27 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="/styles.css">
     <title>Message Details</title>
 </head>
 
 <body>
-    <h1>Message Details</h1>
-    <h3>Author: <%= message.user %>
-    </h3>
-    <p>
-        <%= message.text %>
-    </p>
-    <p>
-        Added: <%=message.added.toLocaleString() %>
-    </p>
-    <br><br>
-    <a href="/">Back to all messages</a>
+    <div class="background"></div>
+
+    <div class="overlay">
+        <div class="card">
+            <h1>Message Details</h1>
+            <h3>Author: <%= message.user %>
+            </h3>
+            <p>
+                <%= message.text %>
+            </p>
+            <p class="date">
+                Added: <%= message.added.toLocaleString() %>
+            </p>
+            <a class="btn" href="/">Back</a>
+        </div>
+    </div>
 </body>
 
 </html>
