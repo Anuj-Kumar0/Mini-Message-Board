@@ -1,1 +1,33 @@
-# Mini-Message-Board
+# Mini Message Board
+
+A simple message board application built with Node.js and Express.
+
+Live Demo: https://mini-message-board-nlk6.onrender.com
+
+Features:
+
+- View a list of messages
+- Submit new messages
+- Server-side routing with Express
+- Templating using EJS
+- Custom 404 and 500 error pages
+- Environment variable configuration for production deployment
+
+Tech Stack:
+
+- Node.js
+- Express
+- EJS
+- CSS
+- Render (Deployment)
+
+Installation & Setup:
+
+1. Clone the repository: git clone git@github.com:Anuj-Kumar0/Mini-Message-Board.git
+2. Navigate into the project: cd mini-message-board
+3. Install dependencies: npm Install
+4. Create a `.env` file: PORT = 3000
+5. Start the server: node app.js
+6. Visit: http://localhost:3000
+
+
