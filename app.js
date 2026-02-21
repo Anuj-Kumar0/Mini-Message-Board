@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const path = require("node:path");
@@ -24,7 +25,7 @@ app.use((req, res, next) => {
     res.status(500).render('errors/500');
   });  
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, (error) => {
   if (error) {
     throw error;
