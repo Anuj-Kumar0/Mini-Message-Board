@@ -13,15 +13,15 @@
         <h1>Messages</h1>
         <a class="btn" href="/new">Create a New Message</a>
 
-        <% messages.forEach((message, index)=> { %>
+        <% messages.forEach((message)=> { %>
             <div class="card">
                 <h3>
-                    <%= message.user %>
+                    <%= message.username %>
                 </h3>
                 <p>
                     <%= message.text %>
                 </p>
-                <a class="btn-small" href="/message/<%= index %>">Open</a>
+                <a class="btn-small" href="/message/<%= message.id %>">Open</a>
             </div>
             <% }); %>
     </div>

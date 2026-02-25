@@ -12,13 +12,13 @@
     <div class="overlay">
         <div class="card">
             <h1>Message Details</h1>
-            <h3>Author: <%= message.user %>
+            <h3>Author: <%= message.username %>
             </h3>
             <p>
                 <%= message.text %>
             </p>
             <p class="date">
-                Added: <%= message.added.toLocaleString() %>
+                Added: <%= new Date(message.added).toLocaleString() %>
             </p>
             <a class="btn" href="/">Back</a>
         </div>
