@@ -8,6 +8,7 @@ Features:
 
 - View a list of messages
 - Submit new messages
+- Store new messages in a PostgreSQL database
 - Server-side routing with Express
 - Templating using EJS
 - Custom 404 and 500 error pages
@@ -19,6 +20,7 @@ Tech Stack:
 - Express
 - EJS
 - CSS
+- PostgreSQL
 - Render (Deployment)
 
 Installation & Setup:
