@@ -11,19 +11,32 @@
 
     <div class="overlay">
         <h1>Messages</h1>
-        <a class="btn" href="/new">Create a New Message</a>
 
-        <% messages.forEach((message)=> { %>
-            <div class="card">
-                <h3>
-                    <%= message.username %>
-                </h3>
-                <p>
-                    <%= message.text %>
-                </p>
-                <a class="btn-small" href="/message/<%= message.id %>">Open</a>
+        <% if (errors && errors.length> 0) { %>
+            <div style="color: #ffb3b3; margin-bottom: 20px;">
+                <ul>
+                    <% errors.forEach((error)=> { %>
+                        <li>
+                            <%= error.msg %>
+                        </li>
+                        <% }) %>
+                </ul>
             </div>
-            <% }); %>
+            <% } %>
+
+                <a class="btn" href="/new">Create a New Message</a>
+
+                <% messages.forEach((message)=> { %>
+                    <div class="card">
+                        <h3>
+                            <%= message.username %>
+                        </h3>
+                        <p>
+                            <%= message.text %>
+                        </p>
+                        <a class="btn-small" href="/message/<%= message.id %>">Open</a>
+                    </div>
+                    <% }); %>
     </div>
 </body>
 
