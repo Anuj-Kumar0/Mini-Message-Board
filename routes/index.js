@@ -8,7 +8,10 @@ router.get('/', async (req, res) => {
     const { rows } = await pool.query(
       "SELECT * FROM messages ORDER BY added DESC"
     );
-    res.render('index', { messages: rows });
+    res.render('index', { 
+      messages: rows,
+      errors: [] 
+    });
   } catch (err) {
     console.error(err);
     res.status(500).render('errors/500');
